@@ -239,16 +239,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* hover */
-.address :hover,
-.header-nav :hover,
-.header-contacts :hover,
-.address :focus,
-.header-nav :focus,
-.header-contacts :focus {
-    color: var(--accent);
-}
-
 /* portfolio */
 .projects {
     background-color: var(--white);
@@ -294,4 +284,18 @@ body {
 .project-text {
     display: flex;
     justify-content: left;
+}
+
+/* hover,  */
+.address :hover,
+.header-nav :hover,
+.header-contacts :hover,
+.address :focus,
+.header-nav :focus,
+.header-contacts :focus,
+.logo-fotter>span :hover,
+.logo-fotter :hover,
+.logo-fotter>span :focus,
+.logo-fotter :focus {
+    color: var(--accent);
 }
