@@ -1,24 +1,20 @@
-html {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 :root {
-    --accent: #2196F3;
+    --accent-color: #2196F3;
+    --accent-btn-color: #188CE8;
     --text: #757575;
     --white: #FFFFFF;
     --maine: #212121;
-    --background_secondary: #F5F4FA;
+    --background-secondary-color: #F5F4FA;
     --primery-font-family: Roboto, sans-serif;
+    --background-color-dark: #2F303A;
 }
 
 body {
     font-family: var(--primery-font-family);
     color: var(--text);
     background-color: var(--white);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .link {
@@ -30,7 +26,7 @@ body {
 }
 
 .header-nav.current {
-    color: var(--accent)
+    color: var(--accent-color);
 }
 
 .content {
@@ -44,9 +40,9 @@ body {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    color: var(--accent);
+    color: var(--accent-color);
     line-height: 1.19;
-    letter-spacing: 0.03em;
+
 }
 
 .logo-header>span {
@@ -55,13 +51,11 @@ body {
     font-size: 26px;
     color: var(--maine);
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .header-nav {
     color: var(--maine);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -70,7 +64,6 @@ body {
 .nav-contact {
     color: var(--text);
     font-weight: 500;
-    font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
 }
@@ -80,7 +73,7 @@ body {
     font-weight: 900;
     font-size: 44px;
     color: var(--white);
-    background-color: #2F303A;
+    background-color: var(--background-color-dark);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -88,30 +81,26 @@ body {
 }
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-color-dark)
 }
 
 /* hero-button */
 .hero-button {
     font-family: var(--primery-font-family);
-    background-color: var(--accent);
+    background-color: var(--accent-color);
     color: var(--white);
     font-weight: 700;
     font-size: 16px;
-    width: 216px;
-    height: 50px;
-    text-align: center;
     letter-spacing: 0.06em;
     line-height: 1.8;
     border-radius: 4px;
-    border: var(--accent);
+    border: var(--accent-color);
 
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #188CE8;
-
+    background-color: var(--accent-btn-color)
 }
 
 /* features */
@@ -133,17 +122,12 @@ body {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
 }
 
 .features-text {
     color: var(--text);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
 }
 
 /* examples */
@@ -152,13 +136,12 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
 /* team */
 .team {
-    background-color: var(--background_secondary);
+    background-color: var(--background-secondary-color);
 }
 
 .team-title {
@@ -166,14 +149,13 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
 }
 
 .team-member {
     color: var(--maine);
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -181,7 +163,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -191,16 +172,15 @@ body {
 
 /* footer */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-color-dark)
 }
 
 .logo-fotter {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    color: var(--accent);
+    color: var(--accent-color);
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .logo-fotter>span {
@@ -209,23 +189,18 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .footer-adress {
     color: var(--white);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .footer-location {
     color: var(--white);
-    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
 }
 
 .footer-contact {
@@ -238,13 +213,12 @@ body {
 }
 
 .button-filter {
-    font-family: inherit;
+    font-family: var(--primery-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #F5F4FA;
+    background-color: var(--background-secondary-color);
     border-radius: 4px;
-    letter-spacing: 0.03em;
     border: 0;
     cursor: pointer;
     text-align: center;
@@ -267,7 +241,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
 }
 
 .address :hover,
@@ -283,5 +256,11 @@ body {
 .button-filter:hover,
 .button-filter:focus {
 
-    color: var(--accent);
+    color: var(--accent-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--white);
+    background-color: var(--accent-color);
 }
